@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: var(--obsidian);
+  --color-charcoal: var(--charcoal);
+  --color-gold: #FFD700;
+  --color-purple: #8A2BE2;
+  --color-purple-glow: #9D50DF;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ededed;
+  --charcoal: #121212;
+  --obsidian: #050505;
+}
+
+[data-theme="light"] {
+  --background: #f4f4f5;
+  /* Zinc-100 */
+  --foreground: #09090b;
+  /* Zinc-950 */
+  --charcoal: #ffffff;
+  /* White Cards */
+  --obsidian: #ffffff;
+  --color-white: #000000;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overscroll-behavior-y: none;
+}

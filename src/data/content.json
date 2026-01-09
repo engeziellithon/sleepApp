@@ -1,0 +1,76 @@
+[
+    {
+        "id": "rain-city",
+        "title": "Rainy City Window",
+        "description": "Heavy rain against a skyscraper window.",
+        "premium": false,
+        "layers": [
+            {
+                "id": "rain-heavy",
+                "src": "/sounds/rain.ogg",
+                "volume": 0.8
+            },
+            {
+                "id": "traffic-distant",
+                "src": "/sounds/wind.ogg",
+                "volume": 0.3
+            },
+            {
+                "id": "wind-low",
+                "src": "/sounds/wind.ogg",
+                "volume": 0.4
+            }
+        ]
+    },
+    {
+        "id": "forest-campfire",
+        "title": "Midnight Campfire",
+        "description": "Crackling fire in a deep pine forest.",
+        "premium": true,
+        "layers": [
+            {
+                "id": "fire-crackle",
+                "src": "/sounds/fire.ogg",
+                "volume": 0.7
+            },
+            {
+                "id": "crickets",
+                "src": "/sounds/crickets.ogg",
+                "volume": 0.4
+            },
+            {
+                "id": "owls",
+                "src": "/sounds/wind.ogg",
+                "volume": 0.2
+            },
+            {
+                "id": "wind-trees",
+                "src": "/sounds/wind.ogg",
+                "volume": 0.3
+            }
+        ]
+    },
+    {
+        "id": "space-station",
+        "title": "Orbital Station",
+        "description": "Deep space hum and computer beeps.",
+        "premium": true,
+        "layers": [
+            {
+                "id": "space-hum",
+                "src": "/sounds/space.ogg",
+                "volume": 0.6
+            },
+            {
+                "id": "radar-beep",
+                "src": "/sounds/space.ogg",
+                "volume": 0.2
+            },
+            {
+                "id": "airlock-hiss",
+                "src": "/sounds/wind.ogg",
+                "volume": 0.3
+            }
+        ]
+    }
+]
