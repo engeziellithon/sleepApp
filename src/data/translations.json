@@ -24,7 +24,15 @@
         "auth_submit": "Create Account",
         "auth_login_alt": "Already have an account? Log In",
         "auth_logout": "Log Out",
-        "profile_hello": "Hello,"
+        "profile_hello": "Hello,",
+        "trigger_timer_title": "Unlock Sleep Timer",
+        "trigger_timer_desc": "Set a timer and let the audio fade out gently as you drift off.",
+        "trigger_preset_title": "Smart Presets",
+        "trigger_preset_desc": "One-tap mixes for deep sleep or focus. Unlocked with Premium.",
+        "trigger_favorite_title": "Save Your Favorites",
+        "trigger_favorite_desc": "Keep your perfect sound mixes forever.",
+        "trigger_streak_title": "Don't Lose Your Streak!",
+        "trigger_streak_desc": "You're on a roll. Secure your progress with Premium."
     },
     "pt": {
         "app_title": "WakeUpCash",
@@ -51,6 +59,14 @@
         "auth_submit": "Criar Conta",
         "auth_login_alt": "Já tem conta? Entrar",
         "auth_logout": "Sair",
-        "profile_hello": "Olá,"
+        "profile_hello": "Olá,",
+        "trigger_timer_title": "Desbloqueie o Timer",
+        "trigger_timer_desc": "Defina um tempo e deixe o áudio diminuir suavemente enquanto você dorme.",
+        "trigger_preset_title": "Presets Inteligentes",
+        "trigger_preset_desc": "Mixagens rápidas para sono profundo ou foco. Exclusivo Premium.",
+        "trigger_favorite_title": "Salvar Favoritos",
+        "trigger_favorite_desc": "Guarde suas mixagens perfeitas para sempre.",
+        "trigger_streak_title": "Não Perca sProgresso!",
+        "trigger_streak_desc": "Você está indo bem. Garanta seu streak com Premium."
     }
 }

@@ -3,7 +3,7 @@ import { useAppStore } from '@/store/useAppStore';
 import { useTranslation } from '@/hooks/useTranslation';
 
 export function PaywallModal() {
-    const { paywallOpen, setPaywallOpen, setPremium } = useAppStore();
+    const { paywallOpen, setPaywallOpen, setPremium, paywallTrigger } = useAppStore();
     const { t } = useTranslation();
 
     if (!paywallOpen) return null;
@@ -13,6 +13,23 @@ export function PaywallModal() {
         setPremium(true);
         setPaywallOpen(false);
     };
+
+    const getDynamicContent = () => {
+        switch (paywallTrigger) {
+            case 'timer':
+                return { title: t('trigger_timer_title'), desc: t('trigger_timer_desc') };
+            case 'preset':
+                return { title: t('trigger_preset_title'), desc: t('trigger_preset_desc') };
+            case 'favorite':
+                return { title: t('trigger_favorite_title'), desc: t('trigger_favorite_desc') };
+            case 'streak':
+                return { title: t('trigger_streak_title'), desc: t('trigger_streak_desc') };
+            default:
+                return { title: t('modal_title'), desc: t('modal_desc') };
+        }
+    };
+
+    const { title, desc } = getDynamicContent();
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-xl animate-in fade-in duration-300">
@@ -31,10 +48,10 @@ export function PaywallModal() {
                         <Lock className="w-8 h-8 text-white" />
                     </div>
                     <h2 className="text-3xl font-bold bg-gradient-to-r from-[var(--foreground)] to-gray-400 bg-clip-text text-transparent mb-2">
-                        {t('modal_title')}
+                        {title}
                     </h2>
                     <p className="text-gray-400 text-sm">
-                        {t('modal_desc')}
+                        {desc}
                     </p>
                 </div>
 
